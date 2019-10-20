@@ -7,44 +7,17 @@ namespace Custom_Report_Debugger
 {
     class HierarchyChecker
     {
-        private static List<string> ConfigImport(string[] config)
-        {
-            var group = new List<string>();
-
-            foreach (var field in config)
-            {
-                group.Add(field.Trim().Replace("\n", ""));
-            }
-
-            return group;
-        }
-
         public static List<string> HierarchyManagement(List<string> mergefieldsToTest)
         {
-            var report_Group = ConfigImport(ConfigurationManager.AppSettings.Get("Report").Split(','));
-            var managedAssetSummary = ConfigImport(ConfigurationManager.AppSettings.Get("ManagedAssetSummary").Split(','));
-            var managedAssetSummary_Plans = ConfigImport(ConfigurationManager.AppSettings.Get("ManagedAssetSummary_Plans").Split(','));
-            var managedAssetSummary_AllPlans = ConfigImport(ConfigurationManager.AppSettings.Get("ManagedAssetSummary_AllPlans").Split(','));
-            var managedAssetSummary_SubPlans = ConfigImport(ConfigurationManager.AppSettings.Get("ManagedAssetSummary_SubPlans").Split(','));
-            var managedAssetSummary_CostsAndChargesSummary = ConfigImport(ConfigurationManager.AppSettings.Get("ManagedAssetSummary_CostsAndChargesSummary").Split(','));
-            var managedAssetSummary_CostsAndCharges = ConfigImport(ConfigurationManager.AppSettings.Get("ManagedAssetSummary_CostsAndCharges").Split(','));
-            var report_Group = ConfigImport(ConfigurationManager.AppSettings.Get("Report").Split(','));
-            var report_Group = ConfigImport(ConfigurationManager.AppSettings.Get("Report").Split(','));
-            var report_Group = ConfigImport(ConfigurationManager.AppSettings.Get("Report").Split(','));
-            var report_Group = ConfigImport(ConfigurationManager.AppSettings.Get("Report").Split(','));
-            var report_Group = ConfigImport(ConfigurationManager.AppSettings.Get("Report").Split(','));
-            var report_Group = ConfigImport(ConfigurationManager.AppSettings.Get("Report").Split(','));
-            var report_Group = ConfigImport(ConfigurationManager.AppSettings.Get("Report").Split(','));
-            var report_Group = ConfigImport(ConfigurationManager.AppSettings.Get("Report").Split(','));
-            var report_Group = ConfigImport(ConfigurationManager.AppSettings.Get("Report").Split(','));
+            
 
             //Report
-            //var report_Group = new List<string>();
-            //var report_Group_Array = ConfigurationManager.AppSettings.Get("Report").Split(',');
-            //foreach (var field in report_Group_Array)
-            //{
-            //    report_Group.Add(field.Trim().Replace("\n", ""));
-            //}
+            var report_Group = new List<string>();
+            var report_Group_Array = ConfigurationManager.AppSettings.Get("Report").Split(',');
+            foreach (var field in report_Group_Array)
+            {
+               report_Group.Add(field.Trim().Replace("\n", ""));
+            }
 
             //Managed Asset Summary
             var managedAssetSummary_Group = new List<string>();
