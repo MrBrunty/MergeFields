@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29411.108
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Custom Report Debugger", "Custom Report Debugger.csproj", "{DEA4EFFD-9654-4085-A0E1-19A19350ACED}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DEA4EFFD-9654-4085-A0E1-19A19350ACED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DEA4EFFD-9654-4085-A0E1-19A19350ACED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DEA4EFFD-9654-4085-A0E1-19A19350ACED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DEA4EFFD-9654-4085-A0E1-19A19350ACED}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1A1A974E-2DBC-40AC-B8B8-48842C832233}
+	EndGlobalSection
+EndGlobal
